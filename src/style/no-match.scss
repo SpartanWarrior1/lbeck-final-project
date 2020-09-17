@@ -1,0 +1,31 @@
+.nomatch-wrapper {
+    .nomatch-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        padding-top: 50px;
+        font-weight: bold;
+    }
+    .nomatch-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            font-size: 30px;
+            text-decoration: none;
+            color: $teal;
+            background-color: $black;
+            margin-top: 50px;
+            padding: 20px 30px;
+            border-radius: 50px;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                color: $black;
+                background: $teal;
+            }
+        }
+    }
+}

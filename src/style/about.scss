@@ -1,0 +1,36 @@
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: $black;
+    height: calc(100vh - 250px);
+    width: 100vw;
+    @media (max-width: 500px) {
+        display: flex;
+        direction: column;
+        background-color: $black;
+        .about-title {
+            margin: 25px;
+        }
+        .about-info {
+            color: $teal;
+        }
+    }
+    .about-left-wrapper {
+        .about-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            background-color: $teal;
+        }
+        .about-info {
+            display: flex;
+            align-items: center;
+            margin: 25px 30px;
+            font-size: 18px;
+        }
+    }
+}

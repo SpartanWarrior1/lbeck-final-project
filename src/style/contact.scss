@@ -1,0 +1,120 @@
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 30px 370px;
+    background-color: $black;
+    padding: 10px;
+    @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+        margin: 0px;
+        text-align: center;
+    }
+    .contact-info-wrapper {
+        margin-right: 5px;
+        .contact-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 15px 0px;
+            width: 300px;
+            font-size: 35px;
+            font-weight: bold;
+            background-color: $teal;
+        }
+        .contact-info {
+            margin: 25px 30px;
+            font-size: 18px;
+            color: $teal;
+            .info-phone {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                svg {
+                    margin-right: 10px;
+                }
+            }
+            .info-email {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .contact-form-wrapper {
+        margin-left: 5px;
+        .contact-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: $teal;
+            padding: 10px 5px;
+            .contact-form-info {
+                margin: 10px;
+                .contact-label {
+                    display: flex;
+                    flex-direction : column;
+                    font-size: 20px;
+                }
+                .contact-input {
+                    border-radius: 15px;
+                    border: none;
+                    width: 280px;
+                    height: 25px;
+                    margin-top: 5px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color: $black;
+                    font-size: 15px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .contact-message {
+                    border-radius: 5px;
+                    border: none;
+                    resize: none;
+                    width: 280px;
+                    height: 125px;
+                    margin-top: 5px;
+                    padding: 5px 10px;
+                    color: $black;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 15px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .contact-btn {
+                background-color: $teal;
+                font-size: 20px;
+                border: none;
+                border-radius: 25px;
+                color: $black;
+                padding: 15px 0px;
+                width: 300px;
+                text-decoration: none;
+                margin: 4px 2px;
+                font-weight: bold;
+                transition: all 0.1s ease-in-out;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    background-color: $dark-teal;
+                }
+            }
+        }
+    }
+}

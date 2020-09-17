@@ -1,0 +1,9 @@
+.auth-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    @media (max-width: 500px) {
+        padding-top: 0px;
+    }
+}
